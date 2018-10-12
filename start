@@ -1,0 +1,6 @@
+#!/bin/bash
+set -eo pipefail
+./1_init_app_cert.sh
+./2_build_and_push_images.sh
+./3_deploy_test_app.sh
+./4_retrieve_secret.sh
